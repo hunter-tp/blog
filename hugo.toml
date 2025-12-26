@@ -366,9 +366,9 @@ enable = true
 repo = "hunter-tp/blog"
 repoId = "R_kgDOQunPug"
 category = "Announcements"
-categoryId = ""
+categoryId = "DIC_kwDOQunPus4C0Px5"
 # 为空时自动适配当前主题 i18n 配置
-lang = ""
+lang = "zh-CN"
 mapping = "pathname"
 reactionsEnabled = "1"
 emitMetadata = "0"
