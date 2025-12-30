@@ -1,0 +1,154 @@
+{
+  "main": {
+    "id": "da77cdcb849f2528",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a6d4d0a09851988",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cf2bf27a9efca183",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "17ccff1fd7bbaaf6",
+    "type": "split",
+    "children": [
+      {
+        "id": "0f4b285b5ecc79e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "af9969e1ac13ddea",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "8de13d36cedae9a4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "226cce00a83c8b95",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e31c01ad5031df4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "be0ce98955baf847",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "798bb6c8084f62bb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "872d54d935331483",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "b835665873938507",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15da16b0ace90ac3",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false,
+      "switcher:打开快速切换": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
+    }
+  },
+  "active": "cf2bf27a9efca183",
+  "lastOpenFiles": [
+    "2026目标.md",
+    "财富自由革命之路-孙宇晨.md"
+  ]
+}

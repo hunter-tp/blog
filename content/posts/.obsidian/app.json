@@ -1,0 +1,21 @@
+{
+  "attachmentFolderPath": "./attach",
+  "useMarkdownLinks": true,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "alwaysUpdateLinks": true,
+  "defaultViewMode": "preview",
+  "livePreview": true,
+  "showLineNumber": false,
+  "propertiesInDocument": "source",
+  "showUnsupportedFiles": true,
+  "newLinkFormat": "relative",
+  "autoPairMarkdown": false,
+  "autoPairBrackets": false,
+  "smartIndentList": false,
+  "spellcheck": false
+}
