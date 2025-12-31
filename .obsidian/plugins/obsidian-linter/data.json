@@ -31,8 +31,8 @@
       "force-multi-line-array-style": ""
     },
     "insert-yaml-attributes": {
-      "enabled": false,
-      "text-to-insert": "aliases: \ntags: "
+      "enabled": true,
+      "text-to-insert": "draft: true\ntitle: ''\ntags: ['draft']\ncategories: ['draft']"
     },
     "move-tags-to-yaml": {
       "enabled": true,
@@ -58,19 +58,19 @@
       "yaml-sort-order-for-other-keys": "None"
     },
     "yaml-timestamp": {
-      "enabled": false,
+      "enabled": true,
       "date-created": true,
-      "date-created-key": "created",
+      "date-created-key": "date",
       "date-created-source-of-truth": "file system",
-      "date-modified": true,
-      "date-modified-key": "modified",
+      "date-modified": false,
+      "date-modified-key": "lastmod",
       "date-modified-source-of-truth": "file system",
-      "format": "YYYY-MM-DD",
+      "format": "'YYYY-MM-DDTHH:mm:ssZ'",
       "convert-to-utc": false,
       "update-on-file-contents-updated": "never"
     },
     "yaml-title": {
-      "enabled": false,
+      "enabled": true,
       "title-key": "title",
       "mode": "first-h1-or-filename-if-h1-missing"
     },
@@ -92,11 +92,11 @@
       "enabled": false
     },
     "header-increment": {
-      "enabled": false,
+      "enabled": true,
       "start-at-h2": false
     },
     "headings-start-line": {
-      "enabled": false
+      "enabled": true
     },
     "remove-trailing-punctuation-in-heading": {
       "enabled": false,
@@ -193,7 +193,7 @@
       "enabled": true
     },
     "empty-line-around-horizontal-rules": {
-      "enabled": false
+      "enabled": true
     },
     "empty-line-around-math-blocks": {
       "enabled": false
