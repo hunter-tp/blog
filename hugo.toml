@@ -2,7 +2,10 @@ baseURL = "http://example.org/"
 
 theme = "LoveIt"
 
-title = "Hunter-TP's Blog"
+title = "Tom Tang's Blog"
+
+defaultContentLanguage = "zh-cn"
+defaultContentLanguageInSubdir = false
 
 # 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "zh-CN"
@@ -34,35 +37,54 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [caches.images]
     dir = ':cacheDir/images'
 
-# 菜单配置
-[menu]
-  [[menu.main]]
+# 多语言配置
+[languages]
+  [languages.zh-cn]
+    languageCode = "zh-CN"
+    languageName = "简体中文"
+    hasCJKLanguage = true
+    title = "Tom Tang's Blog"
     weight = 1
-    identifier = "posts"
-    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-    pre = ""
-    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
-    post = ""
-    name = "文章"
-    url = "/posts/"
-    # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
-    title = ""
-  [[menu.main]]
+
+    [languages.zh-cn.menu]
+      [[languages.zh-cn.menu.main]]
+        weight = 1
+        identifier = "posts"
+        name = "文章"
+        url = "/posts/"
+      [[languages.zh-cn.menu.main]]
+        weight = 2
+        identifier = "tags"
+        name = "标签"
+        url = "/tags/"
+      [[languages.zh-cn.menu.main]]
+        weight = 3
+        identifier = "categories"
+        name = "分类"
+        url = "/categories/"
+
+  [languages.en]
+    languageCode = "en"
+    languageName = "English"
+    title = "Tom Tang's Blog"
     weight = 2
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "标签"
-    url = "/tags/"
-    title = ""
-  [[menu.main]]
-    weight = 3
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "分类"
-    url = "/categories/"
-    title = ""
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        weight = 1
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts/"
+      [[languages.en.menu.main]]
+        weight = 2
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+      [[languages.en.menu.main]]
+        weight = 3
+        identifier = "categories"
+        name = "Categories"
+        url = "/categories/"
 
 # Hugo 解析文档的配置
 [markup]
@@ -100,11 +122,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   priority = 0.5
 
 # Permalinks 配置
-[Permalinks]
-[permalinks.page]
-posts = '/articles/:slug/'
-[permalinks.section]
-posts = '/articles/'
+[permalinks]
+posts = "/articles/:slug/"
 
 ## 隐私信息配置
 #[privacy]
@@ -146,14 +165,14 @@ fingerprint = ""
 #  日期格式
 dateFormat = "2006-01-02"
 # 网站标题, 用于 Open Graph 和 Twitter Cards
-title = "Hunter-TP's Blog'"
+title = "Tom Tang's Blog"
 # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
-description = "Hunter-TP's Blog"
+description = "Tom Tang's Blog"
 # 网站图片, 用于 Open Graph 和 Twitter Cards
 #images = ["/logo.png"]
 # 作者配置
 [params.author]
-name = "Hunter-TP"
+name = "Tom Tang"
 #email = ""
 #link = ""
 
@@ -168,7 +187,7 @@ mobileMode = "auto"
 # LOGO 的 URL
 logo = ""
 # 标题名称
-name = "Hunter-TP's Blog"
+name = "Tom Tang's Blog"
 # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
 pre = ""
 # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
@@ -216,7 +235,7 @@ rss = 10
 #  应用图标配置
 [params.app]
 # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-title = "Hunter-TP's Blog"
+title = "Tom Tang's Blog"
 # 是否隐藏网站图标资源链接
 noFavicon = false
 # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
@@ -363,12 +382,12 @@ enable = true
 [params.page.comment.giscus]
 # 你可以参考官方文档来使用下列配置
 enable = true
-repo = "hunter-tp/blog"
+repo = "tomtang-dev/blog"
 repoId = "R_kgDOQunPug"
 category = "Announcements"
 categoryId = "DIC_kwDOQunPus4C0Px5"
 # 为空时自动适配当前主题 i18n 配置
-lang = "zh-CN"
+lang = ""
 mapping = "pathname"
 reactionsEnabled = "1"
 emitMetadata = "0"
